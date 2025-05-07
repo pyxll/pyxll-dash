@@ -1,0 +1,32 @@
+[project]
+name = "pyxll-dash"
+version = "0.0.1"
+authors = [
+  { name="Tony Roberts", email="tony@pyxll.com" },
+]
+description = "Adds Plotly Dash support to PyXLL for integrating Dash apps into Microsoft Excel."
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: Microsoft :: Windows",
+]
+license = "MIT"
+license-files = ["LICENSE.md"]
+dependencies = [
+    "pyxll",
+    "dash",
+    "werkzeug"
+]
+
+[project.urls]
+Repository = "https://github.com/pyxll/pyxll-dash"
+Issues = "https://github.com/pyxll/pyxll-dash/issues"
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "setuptools"
+]
+
+[project.entry-points."pyxll"]
+modules = "pyxll_dash.pyxll:modules"
